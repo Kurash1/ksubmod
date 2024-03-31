@@ -1,0 +1,20 @@
+namespace = ksubmod
+country_event = {
+	id = ksubmod.1
+	title = none
+	desc = none
+	is_triggered_only = yes
+	option = {
+		name = none
+		ai_chance = {
+			factor = 1
+		}
+		every_owned_province = {
+			change_culture = ROOT
+		}
+		change_estate_land_share = {
+			estate = all
+			share = -100
+		}
+	}
+}
