@@ -216,7 +216,7 @@ amldihr_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_country_or_subject_holds_non_sovereign_subjects_with = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = serpentreach_region
 				value = 15
 			}
@@ -281,7 +281,7 @@ amldihr_1 = {
 			}
 		}
 		trigger = {
-			num_of_provinces_owned_or_country_or_subject_holds_non_sovereign_subjects_with = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 20
 				OR = {
 					has_terrain = dwarven_hold
@@ -575,7 +575,7 @@ amldihr_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_country_or_subject_holds_non_sovereign_subjects_with = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = serpentreach_region
 				OR = {
 					has_terrain = dwarven_hold
@@ -793,7 +793,7 @@ amldihr_3 = {
 		}
 		trigger = {
 			has_reform = dwarovar_assembly_of_holds_reform
-			num_of_provinces_owned_or_country_or_subject_holds_non_sovereign_subjects_with = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
 				OR = {
 					has_terrain = dwarven_hold
@@ -826,7 +826,7 @@ amldihr_3 = {
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					NOT = {
 						ROOT = {
-							num_of_provinces_owned_or_country_or_subject_holds_non_sovereign_subjects_with = {
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 								region = serpentreach_region
 								OR = {
 									has_terrain = dwarven_hold
@@ -846,7 +846,7 @@ amldihr_3 = {
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					NOT = {
 						ROOT = {
-							num_of_provinces_owned_or_country_or_subject_holds_non_sovereign_subjects_with = {
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 								region = middle_dwarovar_region
 								OR = {
 									has_terrain = dwarven_hold
@@ -860,7 +860,7 @@ amldihr_3 = {
 			}
 		}
 		trigger = {
-			num_of_provinces_owned_or_country_or_subject_holds_non_sovereign_subjects_with = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = serpentreach_region
 				OR = {
 					has_terrain = dwarven_hold
@@ -868,7 +868,7 @@ amldihr_3 = {
 				}
 				value = 5
 			}
-			num_of_provinces_owned_or_country_or_subject_holds_non_sovereign_subjects_with = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = middle_dwarovar_region
 				OR = {
 					has_terrain = dwarven_hold
@@ -1024,7 +1024,7 @@ amldihr_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_country_or_subject_holds_non_sovereign_subjects_with = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 3
 				OR = {
 					has_terrain = dwarven_hold
@@ -1235,7 +1235,7 @@ amldihr_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_country_or_subject_holds_non_sovereign_subjects_with = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = middle_dwarovar_region
 				OR = {
 					has_terrain = dwarven_hold

@@ -13,7 +13,7 @@ ernatvir_1 = {
 		required_missions = {}
 		
 		provinces_to_highlight = {
-			owner = { ai = no }
+			AND = { owner = { ai = no } is_city = yes }
 			trade_goods = copper
 			NOT = { has_building = weapons }
 		}
@@ -78,7 +78,7 @@ ernatvir_1 = {
 		}
 		
 		provinces_to_highlight = {
-			owner = { ai = no }
+			AND = { owner = { ai = no } is_city = yes }
 			trade_goods = gems
 			OR = {
 				NOT = { base_production = 15 }
@@ -119,7 +119,7 @@ ernatvir_1 = {
 		}
 		
 		provinces_to_highlight = {
-			owner = { ai = no }
+			AND = { owner = { ai = no } is_city = yes }
 			OR = { 
 				trade_goods = damestear
 				trade_goods = coal 
@@ -164,7 +164,7 @@ ernatvir_2 = {
 		required_missions = {}
 		
 		provinces_to_highlight = {
-			owner = { ai = no }
+			AND = { owner = { ai = no } is_city = yes }
 			trade_goods = iron
 			NOT = { has_production_building_trigger = yes }
 		}
@@ -232,7 +232,7 @@ ernatvir_2 = {
 		}
 		
 		provinces_to_highlight = {
-			owner = { ai = no }
+			AND = { owner = { ai = no } is_city = yes }
 			trade_goods = mithril
 			OR = {
 				NOT = { has_building = weapons }
@@ -263,7 +263,7 @@ ernatvir_2 = {
 		provinces_to_highlight = {
 			province_id = 2931
 			OR = {
-				NOT = { owner = { ai = no } }
+				NOT = { AND = { owner = { ai = no } is_city = yes } }
 				NOT = { has_dwarven_hold_6 = yes }
 			}
 		}
@@ -271,7 +271,7 @@ ernatvir_2 = {
 		trigger = {
 			2931 = {
 				has_dwarven_hold_6 = yes
-				owner = { ai = no }
+				AND = { owner = { ai = no } is_city = yes }
 			}
 		}
 		
@@ -294,12 +294,12 @@ ernatvir_2 = {
 				AND = {
 					province_id = 2931
 					OR = {
-						NOT = { owner = { ai = no } }
+						NOT = { AND = { owner = { ai = no } is_city = yes } }
 						NOT = { has_dwarven_hold_8 = yes }
 					}
 				}
 				AND = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					has_terrain = dwarven_road
 					has_province_modifier = dwarovar_rail
 					NOT = {
@@ -318,7 +318,7 @@ ernatvir_2 = {
 		trigger = {
 			2931 = {
 				has_dwarven_hold_8 = yes
-				owner = { ai = no }
+				AND = { owner = { ai = no } is_city = yes }
 			}
 			treasury = 10000
 			adm_power = 200
@@ -375,7 +375,7 @@ ernatvir_3 = {
 		provinces_to_highlight = {
 			continent = serpentspine
 			has_terrain = dwarven_road
-			NOT = { owner = { ai = no } }
+			NOT = { AND = { owner = { ai = no } is_city = yes } }
 			has_discovered = ROOT
 		}
 		
@@ -415,7 +415,7 @@ ernatvir_3 = {
 		provinces_to_highlight = {
 			continent = serpentspine
 			has_terrain = dwarven_road
-			NOT = { owner = { ai = no } }
+			NOT = { AND = { owner = { ai = no } is_city = yes } }
 			has_discovered = ROOT
 		}
 		
@@ -456,7 +456,7 @@ ernatvir_3 = {
 			continent = serpentspine
 			has_terrain = dwarven_road
 			OR = {
-				NOT = { owner = { ai = no } }
+				NOT = { AND = { owner = { ai = no } is_city = yes } }
 				NOT = { development = 10 }
 			}
 			has_discovered = ROOT
@@ -519,7 +519,7 @@ ernatvir_4 = {
 		provinces_to_highlight = {
 			continent = serpentspine
 			has_terrain = dwarven_road
-			NOT = { owner = { ai = no } }
+			NOT = { AND = { owner = { ai = no } is_city = yes } }
 			has_discovered = ROOT
 		}
 		
@@ -577,7 +577,7 @@ ernatvir_4 = {
 				province_id = 3003
 			}
 			OR = {
-				NOT = { owner = { ai = no } }
+				NOT = { AND = { owner = { ai = no } is_city = yes } }
 				has_province_modifier = dwarovar_rail
 			}
 			has_discovered = ROOT
@@ -589,71 +589,71 @@ ernatvir_4 = {
 			custom_trigger_tooltip = {
 				tooltip = ernatvir_dagrinrod_line_tooltip
 				4104 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2876 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2988 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2989 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2990 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2991 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2992 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2993 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2994 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2996 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2997 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2998 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2999 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				3000 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				3001 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				3002 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				3003 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 			}
@@ -699,7 +699,7 @@ ernatvir_4 = {
 				province_id = 4038
 			}
 			OR = {
-				NOT = { owner = { ai = no } }
+				NOT = { AND = { owner = { ai = no } is_city = yes } }
 				has_province_modifier = dwarovar_rail
 			}
 			has_discovered = ROOT
@@ -711,87 +711,87 @@ ernatvir_4 = {
 			custom_trigger_tooltip = {
 				tooltip = ernatvir_argrod_line_tooltip
 				2987 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2957 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2956 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2955 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2954 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2943 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2944 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2945 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2946 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2962 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				4240 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2968 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2969 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2970 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2979 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2980 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2984 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				2985 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				4036 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				4037 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 				4038 = {
-					owner = { ai = no }
+					AND = { owner = { ai = no } is_city = yes }
 					NOT = { has_province_modifier = dwarovar_rail }
 				}
 			}
@@ -816,7 +816,7 @@ ernatvir_4 = {
 			continent = serpentspine
 			has_terrain = dwarven_road
 			OR = {
-				NOT = { owner = { ai = no } }
+				NOT = { AND = { owner = { ai = no } is_city = yes } }
 				NOT = { development = 20 }
 			}
 			has_discovered = ROOT
@@ -850,7 +850,7 @@ ernatvir_4 = {
 		provinces_to_highlight = {
 			continent = serpentspine
 			has_terrain = dwarven_road
-			owner = { ai = no }
+			AND = { owner = { ai = no } is_city = yes }
 			NOT = { has_province_modifier = advanced_rail }
 		}
 		
@@ -888,7 +888,7 @@ ernatvir_5 = {
 				province_id = 2934
 			}
 			OR = {
-				NOT = { owner = { ai = no } }
+				NOT = { AND = { owner = { ai = no } is_city = yes } }
 				NOT = { development = 10 }
 			}
 			has_discovered = ROOT
@@ -896,11 +896,11 @@ ernatvir_5 = {
 		
 		trigger = {
 			2932 = {
-				owner = { ai = no }
+				AND = { owner = { ai = no } is_city = yes }
 				development = 10
 			}
 			2934 = {
-				owner = { ai = no }
+				AND = { owner = { ai = no } is_city = yes }
 				development = 10
 			}
 		}
@@ -911,7 +911,7 @@ ernatvir_5 = {
 				add_base_production = 1
 				add_base_manpower = 1
 				area = {
-					limit = { owner = { ai = no } }
+					limit = { AND = { owner = { ai = no } is_city = yes } }
 					add_province_modifier = {
 						name = "growth_of_capital"
 						duration = 9125 #25 years
@@ -937,7 +937,7 @@ ernatvir_5 = {
 				province_id = 2885
 			}
 			OR = {
-				NOT = { owner = { ai = no } }
+				NOT = { AND = { owner = { ai = no } is_city = yes } }
 				NOT = { development = 15 }
 			}
 			has_discovered = ROOT
@@ -945,19 +945,19 @@ ernatvir_5 = {
 		
 		trigger = {
 			4103 = {
-				owner = { ai = no }
+				AND = { owner = { ai = no } is_city = yes }
 				development = 15
 			}
 			2981 = {
-				owner = { ai = no }
+				AND = { owner = { ai = no } is_city = yes }
 				development = 15
 			}
 			2884 = {
-				owner = { ai = no }
+				AND = { owner = { ai = no } is_city = yes }
 				development = 15
 			}
 			2885 = {
-				owner = { ai = no }
+				AND = { owner = { ai = no } is_city = yes }
 				development = 15
 			}
 		}
@@ -978,7 +978,7 @@ ernatvir_5 = {
 		}
 		
 		provinces_to_highlight = {
-			owner = { ai = no }
+			AND = { owner = { ai = no } is_city = yes }
 			has_terrain = dwarven_road
 			NOT = { fort_level = 2 }
 		}
