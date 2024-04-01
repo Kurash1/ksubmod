@@ -123,51 +123,11 @@ amldihr_1 = {
 			I01_vazkron_restoration
 		}
 		provinces_to_highlight = {
-			OR = {
-				AND = {
-					province_id = 4122
-					NOT = { country_or_subject_holds = ROOT }
-				}
-				AND = {
-					country_or_subject_holds = ROOT
-					trade_goods = iron
-					NOT = { base_production = 5 }
-					NOT = {
-						ROOT = {
-							num_of_owned_provinces_with = {
-								value = 4
-								trade_goods = iron
-								base_production = 5
-							}
-						}
-					}
-				}
-				AND = {
-					trade_goods = mithril
-					NOT = { base_production = 15 }
-					NOT = {
-						ROOT = {
-							any_owned_province = {
-								trade_goods = mithril
-								base_production = 15
-							}
-						}
-					}
-				}
-			}
+			always = no
 		}
 		trigger = {
 			4122 = {
 				country_or_subject_holds = ROOT
-			}
-			num_of_owned_provinces_with = {
-				value = 4
-				trade_goods = iron
-				base_production = 5
-			}
-			any_owned_province = {
-				trade_goods = mithril
-				base_production = 15
 			}
 		}
 		effect = {
