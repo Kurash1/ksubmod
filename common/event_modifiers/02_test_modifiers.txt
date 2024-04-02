@@ -16,6 +16,8 @@ kurashi_modifier = {
 	build_cost = -0.3
 	build_time = -0.3
 	global_allowed_num_of_buildings = 3
+	
+	core_creation = -0.5
 }
 #test_modifier = {
 #    can_not_build_colonies = yes
