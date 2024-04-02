@@ -24,7 +24,6 @@ amldihr_1 = {
 					province_id = 4119
 					OR = {
 						NOT = { country_or_subject_holds = ROOT }
-						NOT = { religion = ancestor_worship }
 						NOT = { culture_group = dwarven }
 					}
 				}
@@ -32,7 +31,6 @@ amldihr_1 = {
 					province_id = 2931
 					OR = {
 						NOT = { country_or_subject_holds = ROOT }
-						NOT = { religion = ancestor_worship }
 						NOT = { culture_group = dwarven }
 					}
 				}
@@ -40,7 +38,6 @@ amldihr_1 = {
 					province_id = 2963
 					OR = {
 						NOT = { country_or_subject_holds = ROOT }
-						NOT = { religion = ancestor_worship }
 						NOT = { culture_group = dwarven }
 					}
 				}
@@ -52,17 +49,14 @@ amldihr_1 = {
 			}
 			4119 = {
 				country_or_subject_holds = ROOT
-				religion = ancestor_worship
 				culture_group = dwarven
 			}
 			2931 = {
 				country_or_subject_holds = ROOT
-				religion = ancestor_worship
 				culture_group = dwarven
 			}
 			2963 = {
 				country_or_subject_holds = ROOT
-				religion = ancestor_worship
 				culture_group = dwarven
 			}
 		}
