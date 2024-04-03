@@ -1,23 +1,15 @@
 kurashi_modifier = {
-	culture_conversion_cost = -1
+	governing_capacity_modifier = 0.25
+	global_autonomy = -0.1
+	
+	global_unrest = -5
+}
+paul_modifier = {
+	years_of_nationalism = -50
+	innovativeness_gain = 2
+	
+	culture_conversion_cost = -0.5
 	culture_conversion_time = -1
-	global_autonomy = -1
-	
-	governing_capacity = 400
-	governing_capacity_modifier = 0.2
-	
-	all_estate_loyalty_equilibrium = 0.3
-	all_estate_influence_modifier = -0.3
-	
-	diplomatic_reputation = 5
-	reduced_liberty_desire = 1000
-	diplomatic_annexation_cost = -1
-	
-	build_cost = -0.3
-	build_time = -0.3
-	global_allowed_num_of_buildings = 3
-	
-	core_creation = -0.5
 }
 #test_modifier = {
 #    can_not_build_colonies = yes

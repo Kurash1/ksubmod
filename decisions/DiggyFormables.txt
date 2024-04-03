@@ -16,7 +16,7 @@ country_decisions = {
 		}
 		allow = {
 			owns_core_province = 4119
-			adm_tech = 6	#around 1500
+			adm_tech = 7	#around 1500
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			num_of_cities = 3

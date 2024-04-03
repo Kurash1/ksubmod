@@ -1,20 +1,87 @@
-
 country_decisions = {
-
-	add_kurashi_modifier = {
+	i_see_all = {
 		major = yes
 		potential = {
 			ai = no
 			NOT = {
-				has_country_modifier = kurashi_modifier
+				has_country_flag = all_seeing_country
 			}
 		}
 		allow = {
 			always = yes
 		}
 		effect = {
+			set_country_flag = all_seeing_country
+			west_serpentspine_superregion = {
+				discover_country = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1
+	}
+	
+	i_am_the_magic_man = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = {
+				ruler_has_personality = mage_personality
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			remove_ruler_personality = fertile_personality
+			add_ruler_personality = mage_personality
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1
+	}
+	
+	add_kurashi_modifier = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = {
+				has_global_flag = kurashi_modifier_given
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_global_flag = kurashi_modifier_given
 			add_country_modifier = {
 				name = kurashi_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1
+	}
+	
+	add_paul_modifier = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = {
+				has_global_flag = paul_modifier_given
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_global_flag = paul_modifier_given
+			add_country_modifier = {
+				name = paul_modifier
 				duration = -1
 			}
 		}
