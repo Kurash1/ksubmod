@@ -8,6 +8,8 @@ kurashi_modifier = {
 	reform_progress_growth = 5
 	administrative_efficiency = 0.25
 	fort_maintenance_modifier = -0.5
+	
+	improve_relation_modifier = 1
 }
 paul_modifier = {
 	years_of_nationalism = -50
@@ -29,6 +31,8 @@ vassal_cheat_modifier = {
 	culture_conversion_cost = -1
 	culture_conversion_time = -1
 	years_of_nationalism = -500
+	
+	core_creation = -0.5
 }
 #test_modifier = {
 #    can_not_build_colonies = yes
