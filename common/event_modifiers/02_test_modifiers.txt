@@ -1,6 +1,7 @@
 kurashi_modifier = {
 	governing_capacity_modifier = 0.25
 	global_autonomy = -0.1
+	all_power_cost = -0.025
 	
 	global_unrest = -5
 }
@@ -10,6 +11,16 @@ paul_modifier = {
 	
 	culture_conversion_cost = -0.5
 	culture_conversion_time = -1
+}
+vassal_cheat_modifier = {
+	governing_capacity_modifier = 1000
+	global_autonomy = -0.1
+	
+	global_unrest = -2
+	
+	culture_conversion_cost = -1
+	culture_conversion_time = -1
+	years_of_nationalism = -500
 }
 #test_modifier = {
 #    can_not_build_colonies = yes
