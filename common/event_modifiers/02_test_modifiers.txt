@@ -4,6 +4,10 @@ kurashi_modifier = {
 	all_power_cost = -0.025
 	
 	global_unrest = -5
+	
+	reform_progress_growth = 5
+	administrative_efficiency = 0.25
+	fort_maintenance_modifier = -0.5
 }
 paul_modifier = {
 	years_of_nationalism = -50
@@ -11,6 +15,10 @@ paul_modifier = {
 	
 	culture_conversion_cost = -0.5
 	culture_conversion_time = -1
+	
+	reform_progress_growth = 5
+	development_cost = -0.2
+	development_cost_modifier = -0.2
 }
 vassal_cheat_modifier = {
 	governing_capacity_modifier = 1000
