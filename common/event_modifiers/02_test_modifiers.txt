@@ -1,15 +1,13 @@
 kurashi_modifier = {
 	governing_capacity_modifier = 0.25
 	global_autonomy = -0.1
-	all_power_cost = -0.025
 	
-	global_unrest = -5
+	global_unrest = -3
+	stability_cost_modifier = -0.4
 	
-	reform_progress_growth = 5
-	administrative_efficiency = 0.25
+	reform_progress_growth = 1
+	administrative_efficiency = 0.1
 	fort_maintenance_modifier = -0.5
-	
-	improve_relation_modifier = 1
 }
 paul_modifier = {
 	years_of_nationalism = -50
@@ -18,9 +16,10 @@ paul_modifier = {
 	culture_conversion_cost = -0.5
 	culture_conversion_time = -1
 	
-	reform_progress_growth = 5
-	development_cost = -0.2
-	development_cost_modifier = -0.2
+	advisor_cost = -0.2
+	reform_progress_growth = 1
+	development_cost = -0.1
+	development_cost_modifier = -0.1
 }
 vassal_cheat_modifier = {
 	governing_capacity_modifier = 1000
