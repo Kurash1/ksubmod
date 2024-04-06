@@ -32,6 +32,7 @@ vassal_cheat_modifier = {
 	years_of_nationalism = -500
 	
 	core_creation = -0.5
+	num_accepted_cultures = -500
 }
 #test_modifier = {
 #    can_not_build_colonies = yes
