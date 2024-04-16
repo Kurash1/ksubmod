@@ -1,0 +1,50 @@
+country_decisions = {
+	add_kurashi_modifier = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = {
+				has_global_flag = kurashi_modifier_given
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_global_flag = kurashi_modifier_given
+			add_country_modifier = {
+				name = kurashi_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1
+	}
+	
+	add_paul_modifier = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = {
+				has_global_flag = paul_modifier_given
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_global_flag = paul_modifier_given
+			add_country_modifier = {
+				name = paul_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1
+	}
+}
+
