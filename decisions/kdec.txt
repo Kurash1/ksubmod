@@ -16,6 +16,10 @@ country_decisions = {
 				name = kurashi_modifier
 				duration = -1
 			}
+			change_estate_land_share = {
+				estate = all
+				share = -100
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -39,6 +43,10 @@ country_decisions = {
 			add_country_modifier = {
 				name = paul_modifier
 				duration = -1
+			}
+			change_estate_land_share = {
+				estate = all
+				share = -100
 			}
 		}
 		ai_will_do = {
