@@ -13,6 +13,10 @@ country_decisions = {
 		effect = {
 			set_global_flag = kurashi_modifier_given
 			add_country_modifier = {
+				name = both_modifier
+				duration = -1
+			}
+			add_country_modifier = {
 				name = kurashi_modifier
 				duration = -1
 			}
@@ -26,7 +30,33 @@ country_decisions = {
 		}
 		ai_importance = 1
 	}
-	
+	restore_our_land_share = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = { 
+				has_country_flag = restore_our_land_share
+			}
+		}
+		allow = { always = yes }
+		effect = {
+			set_country_flag = restore_our_land_share
+			change_estate_land_share = {
+				estate = all
+				share = -100
+			}
+			add_legitimacy = 100
+			add_republican_tradition = 100
+			add_devotion = 100
+			add_horde_unity = 100
+			add_meritocracy = 100
+			
+			add_prestige = 100
+			add_stability = 7
+			add_corruption = -20
+			add_inflation = -20
+		}
+	}
 	add_paul_modifier = {
 		major = yes
 		potential = {
@@ -40,6 +70,10 @@ country_decisions = {
 		}
 		effect = {
 			set_global_flag = paul_modifier_given
+			add_country_modifier = {
+				name = both_modifier
+				duration = -1
+			}
 			add_country_modifier = {
 				name = paul_modifier
 				duration = -1
