@@ -8,6 +8,8 @@ both_modifier = {
 	movement_speed = 0.15
 	
 	manpower_recovery_speed = 0.25
+	
+	monthly_reform_progress_modifier = 2
 }
 kurashi_modifier = {
 	
