@@ -10,6 +10,9 @@ both_modifier = {
 	manpower_recovery_speed = 0.25
 	
 	monthly_reform_progress_modifier = 2
+	
+	core_creation = -0.5
+	years_of_nationalism = -100
 }
 kurashi_modifier = {
 	
