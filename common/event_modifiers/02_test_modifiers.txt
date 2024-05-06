@@ -15,7 +15,7 @@ kurashi_modifier = {
 	
 }
 paul_modifier = {
-	
+	cav_to_inf_ratio = 1
 }
 #test_modifier = {
 #    can_not_build_colonies = yes
