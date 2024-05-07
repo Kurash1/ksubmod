@@ -14,6 +14,9 @@ both_modifier = {
 	core_creation = -0.5
 	years_of_nationalism = -100
 	ae_impact = 0.25
+	
+	missionaries = 10
+	global_missionary_strength = 3
 }
 kurashi_modifier = {
 	
