@@ -4,7 +4,7 @@ tags={
 	"Alternative History"
 }
 name="KSubmod"
-supported_version="1.36.*"
+supported_version="1.37.*"
 dependencies={
-        "Anbennar-PublicFork"
+	"Anbennar: A Fantasy Total Conversion"
 }
