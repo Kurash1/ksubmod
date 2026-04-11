@@ -59,7 +59,7 @@ country_decisions = {
 				}
 			}
 			if = { #Esthil
-				limit = { tag = B20 ai = no }
+				limit = { OR = { tag = B20 has_country_modifier = kurashi_modifier } ai = no }
 				any_owned_province = {
 					OR = {
 						area = castonath_area
