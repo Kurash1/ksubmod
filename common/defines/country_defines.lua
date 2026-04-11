@@ -1,0 +1,1 @@
+NDefines.NNationDesigner.POINTS_AVAILABLE = 1000000
