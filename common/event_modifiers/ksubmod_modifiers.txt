@@ -1,14 +1,24 @@
 both_modifier = {
-
+	governing_capacity_modifier = 1
 }
 kurashi_modifier = {
+	governing_capacity_modifier = 1
+	core_creation = -1
+
+	missionaries = 15
+	global_missionary_strength = 0.05
+
 	general_cost = -0.5
 	army_tradition_decay = -0.02
+
 	leader_land_fire = 2
 	leader_land_shock = 2
 	leader_land_manuever = 6
 	leader_siege = 4
-	movement_speed = 0.2
+
+	movement_speed = 0.3
+
+	artillery_shock = 3
 }
 kurashi_temp_modifier = {
 	manpower_recovery_speed = 5
@@ -19,10 +29,22 @@ kurashi_temp_modifier = {
 erika_modifier = {
 	global_trade_goods_size = 2
 	global_trade_goods_size_modifier = 0.25
+
 	advisor_cost = -0.5
-	development_cost_modifier = -0.2
+	diplomatic_reputation = 100
+	diplomats = 10
+
+	development_cost_modifier = -0.3
+	development_cost = -0.1
+	build_time = -0.25
+
+	infantry_fire = 1
+	infantry_shock = 1
+
 	defensiveness = 2
 	garrison_size = 2
+	hostile_attrition = 3
+	max_hostile_attrition = 2
 }
 erika_temp_modifier = {
 	land_morale = 1
