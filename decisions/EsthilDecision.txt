@@ -1,0 +1,88 @@
+
+country_decisions = {
+	
+	kurashi_esthil_nation = {
+		major = yes
+		potential = {
+			has_reform = adventurer_reform
+			NOT = { tag = B02 }
+			has_country_modifier = kurashi_modifier
+			ai = no
+		}
+		allow = {
+			has_reform = found_our_nation
+			is_at_war = no
+			adm_tech = 7
+			has_country_modifier = kurashi_modifier
+			ai = no
+			any_owned_province = {
+				OR = {
+					area = castonath_area
+					area = southgate_area
+					area = burnoll_area
+				}
+			}
+		}
+		effect = {
+			#Esthil
+			change_tag = B54
+			swap_non_generic_missions = yes
+
+			hidden_effect = { restore_country_name = yes }
+			remove_non_electors_emperors_from_empire_effect = yes
+			add_prestige = 25
+			adventurer_legacy_effect = yes
+			set_country_flag = adventurer_derived_government
+			clr_country_flag = knightly_order_adventurer
+			if = {
+				limit = { has_country_flag = B34_lucian }
+				change_government = monarchy
+				hidden_effect = {
+					change_government_reform_progress = -1000
+					lose_reforms = 10
+					add_government_reform = autocracy_reform
+				}
+				country_event = { id = flavor_luciande.37 days = 1 }
+			}
+			else_if = {
+				limit = { tag = B54 } #esthil
+				country_event = { id = flavor_esthil.7 }
+			}
+			else = { country_event = { id = marcher.1 days = 1 } }
+#			country_event = { id = adventurer.2 days = 10 }
+			hidden_effect = {
+				country_event = { #new culture event, 10 years after their debuff runs out
+					id = marcher.2
+					days = 18250
+				}
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_global_flag = new_escanni_adventurer_kingdoms }
+					}
+					escanni_refugee_centers = {
+						owner = {
+							country_event = {
+								id = escanni_refugees_settlement.101 #Escann Stands
+								days = 30
+							}
+						}
+					}
+					set_global_flag = new_escanni_adventurer_kingdoms
+				}
+			}
+			hidden_effect = {
+				set_country_flag = reformed_escanni_adventurer
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 300
+	}
+}
